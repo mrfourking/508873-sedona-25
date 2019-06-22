@@ -237,10 +237,58 @@ img {
   margin-bottom: 30px;
 }
 
+/* Блок поиска гостиницы */
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+
+  background-color: #ffffff;
+}
+
+.hotel-search b {
+  margin-bottom: 30px;
+
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.hotel-search p {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  padding: 0 380px;
+
+  text-align: center;
+}
+
+.search-button {
+  padding: 33px 140px;
+
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.search-button:hover,
+.search-button:focus {
+  color: #ffffff;
+
+  background-color: #604e43;
+}
+
+.search-button:active {
+  background-color: #ffffff;
+}
+
 /* Подвал сайта */
 .page-footer {
-  /* position: absolute;
-  bottom: 0; */
+  position: absolute;
+  bottom: 0;
 
 
   display: flex;
@@ -307,6 +355,7 @@ img {
 
 .copyright {
   width: 241px;
+  margin: 0;
 
   line-height: 26px;
   color: #000000;
