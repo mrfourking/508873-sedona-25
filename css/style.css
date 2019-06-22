@@ -1,0 +1,176 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+ a {
+   color: #000000;
+   text-decoration: none;
+ }
+
+ a:hover,
+ a:focus {
+  color: #81b3d2;
+ }
+
+ a:active {
+   color: rgba(0, 0, 0, 0.3);
+ }
+
+ .visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  position: relative;
+}
+
+.page-header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  margin-left: -70px;
+}
+
+.page-navigation {
+  padding: 0 72px;
+}
+
+.site-navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: left;
+
+  list-style: none;
+}
+
+.site-navigation-item {
+  width: 264px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.site-navigation-item:nth-child(3),
+.site-navigation-item:last-child {
+  text-align: right;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 72px;
+
+}
+
+.hash-tag {
+  width: 241px;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-item {
+  margin-right: 6px;
+}
+
+.social-item a {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  padding: 13px;
+
+  vertical-align: middle;
+
+  text-align: center;
+
+  background-color: #81b3d2;
+}
+
+.social-item a:hover,
+.social-item a:focus {
+  background-color: #669ec0;
+}
+
+.social-item a:active {
+  background-color: #5496bd;
+}
+
+.social-item a:active path {
+  fill: #88b6d1;
+}
+
+.copyright {
+  width: 241px;
+
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.copyright a {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+
+.copyright-logo:hover path,
+.copyright-logo:focus path {
+  fill: #81b3d2;
+}
+
+.copyright-logo:active path {
+  fill: #bdbbbc;
+}
