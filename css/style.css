@@ -106,26 +106,26 @@ img {
   flex-direction: column;
   align-items: center;
   padding-top: 132px;
-  padding-bottom: 55px;
 
   background-image:
     url("../img/intro-mask.svg"),
     url("../img/intro-mask.jpg"),
     url("../img/background-main.jpg");
   background-position:
-    center 533px,
+    center 507px,
     bottom center,
     0 0;
   background-repeat: no-repeat;
 }
 
 .intro img {
-  margin-bottom: 142px;
+  margin-bottom: 138px;
 }
 
 .intro h2 {
   width: 445px;
-  margin-bottom: 31px;
+  margin: 0;
+  margin-bottom: 29px;
 
   font-size: 21px;
   line-height: 26px;
@@ -135,6 +135,7 @@ img {
 
 .intro p {
   margin: 0;
+  margin-bottom: 52px;
   padding: 0;
 }
 
@@ -146,6 +147,8 @@ img {
   padding: 0;
 
   list-style: none;
+
+  counter-reset: list-item;
 }
 
 .advantages-item {
@@ -173,14 +176,20 @@ img {
   flex-direction: row-reverse;
 }
 
+.advantages-item:first-child,
+.advantages-item:last-child {
+  order: -1;
+  padding: 0;
+}
+
 .advantages-item-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 400px;
-  padding-top: 40px;
+  padding-top: 43px;
   padding-right: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 55px;
   padding-left: 60px;
 
   color: #ffffff;
@@ -196,21 +205,58 @@ img {
 .advantages-item h3,
 .advantages-sub-item h4 {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   padding: 0;
   padding-left: 64px;
   padding-right: 65px;
 
   font-size: 21px;
+  line-height: 21px;
 }
 
-.advantages-item span {
-  margin-bottom: 20px;
+.count-list-item-wrap {
+
+  position: relative;
+  margin-bottom: 25px;
+
+  line-height: 21px;
+}
+
+.count-list-item-wrap::before,
+.count-list-item-wrap::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+
+  width: 9px;
+  height: 1px;
+
+  background-color: #333333;
+}
+
+.advantages-item-wrap .count-list-item-wrap::before,
+.advantages-item-wrap .count-list-item-wrap::after {
+  background-color: #ffffff;
+}
+
+.count-list-item-wrap::before {
+  left: -15px;
+}
+
+.count-list-item-wrap::after {
+  right: -15px;
+}
+
+.count-list-item::before {
+  counter-increment: list-item;
+  content: "№" counter(list-item);
 }
 
 .advantages-item p {
   margin: 0;
   padding: 0;
+
+  line-height: 21px;
 }
 
 .advantages-sub-list {
@@ -223,6 +269,7 @@ img {
 
 .advantages-sub-item {
   display: flex;
+  width: 400px;
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
@@ -282,7 +329,9 @@ img {
 }
 
 .search-button:active {
-  background-color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
 }
 
 /* Подвал сайта */
