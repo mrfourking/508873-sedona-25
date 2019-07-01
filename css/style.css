@@ -286,6 +286,7 @@ img {
 
 /* Блок поиска гостиницы */
 .hotel-search {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,7 +305,7 @@ img {
 
 .hotel-search p {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
   padding: 0;
   padding: 0 380px;
 
@@ -312,7 +313,7 @@ img {
 }
 
 .search-button {
-  padding: 33px 140px;
+  padding: 30px 137px;
 
   font-size: 21px;
   line-height: 26px;
@@ -332,6 +333,205 @@ img {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
+}
+
+/* Форма поиска */
+.search-form {
+  position: absolute;
+  top: 302px;
+  left: 50%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 568px;
+  margin-left: -284px;
+  padding: 55px;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.search-form-wrap {
+  position: relative;
+  width: 458px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.search-form-wrap:nth-child(3){
+  width: 226px;
+}
+
+.search-form-wrap:nth-child(4) {
+  width: 179px;
+}
+
+.date-field,
+.number-field {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 6px 13px;
+
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+
+  border: none;
+}
+
+.date-field {
+  width: 346px;
+}
+
+.number-field {
+  width: 114px;
+  padding: 6px 13px;
+
+  text-align: center;
+
+  -moz-appearance: textfield;
+}
+
+.number-field::-webkit-inner-spin-button,
+.number-field::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+}
+
+.date-field:hover,
+.number-field:hover {
+  background-color: #ebebeb;
+}
+
+.date-field:focus,
+.number-field:focus {
+  background-color: #ffffff;
+
+  outline-color: #e5e5e5;
+}
+
+.date-button {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+
+  width: 36px;
+  height: 36px;
+
+  background-color: transparent;
+
+  border: none;
+
+}
+
+.date-button:hover path,
+.date-button:focus path {
+  fill: #000000;
+}
+
+.date-button:active path {
+  fill: #81b3d2;
+}
+
+.number-field-button {
+  position: absolute;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: transparent;
+
+  border: none;
+}
+
+.decrease-button {
+  top: 0;
+  right: 76px;
+  background-image: url("../img/");
+}
+
+.decrease-button::before {
+  content: "";
+
+  position: absolute;
+  top: 18px;
+  left: 13px;
+
+  width: 12px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+}
+
+.increase-button {
+  top: 0;
+  right: 0;
+}
+
+.increase-button::before,
+.increase-button::after {
+  content: "";
+
+  position: absolute;
+  top: 18px;
+  left: 13px;
+
+  width: 11px;
+  height: 3px;
+
+  background-color: #a9a9a9;
+}
+
+.increase-button::after {
+  transform: rotate(90deg);
+}
+
+.decrease-button:hover::before,
+.increase-button:hover::before,
+.increase-button:hover::after,
+.decrease-button:focus::before,
+.increase-button:focus::before,
+.increase-button:focus::after {
+  background-color: #000000;
+}
+
+.decrease-button:active::before,
+.increase-button:active::before,
+.increase-button:active::after {
+  background-color: #81b3d2;
+}
+
+.find-button {
+  margin-top: 24px;
+  padding: 16px 196px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+
+  border: none;
+}
+
+.find-button:hover,
+.find-button:focus {
+  background-color: #669ec0;
+}
+
+.find-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
 }
 
 /* Подвал сайта */
