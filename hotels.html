@@ -25,6 +25,8 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Поиск гостиниц</h1>
+
       <section class="filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -72,6 +74,45 @@
             <button class="filter-button" type="submit">Показать</button>
           </fieldset>
         </form>
+      </section>
+
+      <section class="finded-hotels">
+        <h2 class="visually-hidden">Найденные гостиницы</h2>
+        <div class="hotel-list-controls">
+          <b>Найдено: 3</b>
+          <form class="sort">
+            <h3>Сортировка: </h3>
+            <fieldset class="sort-type">
+              <input class="sort-radio visually-hidden" id="sort-radio-1" type="radio" name="sort-radio" checked>
+              <label for="sort-radio-1">по цене</label>
+              <input class="sort-radio visually-hidden" id="sort-radio-2" type="radio" name="sort-radio">
+              <label for="sort-radio-2">по типу</label>
+              <input class="sort-radio visually-hidden" id="sort-radio-3" type="radio" name="sort-radio">
+              <label for="sort-radio-3">по рейтингу</label>
+            </fieldset>
+            <fieldset class="sort-direction">
+              <input class="sort-direction-radio visually-hidden" id="sort-direction-radio-1" type="radio"
+                name="sort-direction-radio">
+              <label class="sort-direction-label" for="sort-direction-radio-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#cacaca" d="M5.5 0L0 10h11z" />
+                </svg>
+                <span class="visually-hidden">по возрастанию</span>
+              </label>
+              <input class="sort-direction-radio visually-hidden" id="sort-direction-radio-2" type="radio"
+                name="sort-direction-radio" checked>
+              <label class="sort-direction-label" for="sort-direction-radio-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path fill="#cacaca" d="M5.5 10L0 0h11"/>
+                  </svg>
+                <span class="visually-hidden">по убыванию</span>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+        <ul class="hotel-list">
+          <li class="hotel-list-item"></li>
+        </ul>
       </section>
     </main>
     <footer class="page-footer">

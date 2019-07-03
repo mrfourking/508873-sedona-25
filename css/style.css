@@ -27,21 +27,21 @@ img {
   height: auto;
 }
 
- a {
-   color: #000000;
-   text-decoration: none;
- }
+a {
+  color: #000000;
+  text-decoration: none;
+}
 
- a:hover,
- a:focus {
+a:hover,
+a:focus {
   color: #81b3d2;
- }
+}
 
- a:active {
-   color: rgba(0, 0, 0, 0.3);
- }
+a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
- .visually-hidden {
+.visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -253,7 +253,7 @@ img {
 
 .count-list-item::before {
   counter-increment: list-item;
-  content: "№" counter(list-item);
+  content: "№"counter(list-item);
 }
 
 .advantages-item p {
@@ -369,7 +369,7 @@ img {
   align-items: baseline;
 }
 
-.search-form-wrap:nth-child(3){
+.search-form-wrap:nth-child(3) {
   width: 226px;
 }
 
@@ -404,7 +404,7 @@ img {
 }
 
 .number-field::-webkit-inner-spin-button,
-.number-field::-webkit-outer-spin-button{
+.number-field::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
@@ -541,7 +541,6 @@ img {
 .filter {
   padding-top: 85px;
   padding-right: 73px;
-  padding-bottom: 131px;
   padding-left: 73px;
 
   font-size: 14px;
@@ -589,6 +588,11 @@ img {
   padding-left: 40px;
 }
 
+.infrastructure label:last-child,
+.house-type label:last-child {
+  margin-bottom: 31px;
+}
+
 .infrastructure label::before,
 .house-type label::before {
   content: "";
@@ -605,14 +609,14 @@ img {
   background-repeat: no-repeat;
 }
 
-.infrastructure-checkbox:checked + label::before,
-.house-type-checkbox:checked + label::before {
-  width:27px;
+.infrastructure-checkbox:checked+label::before,
+.house-type-checkbox:checked+label::before {
+  width: 27px;
   background-image: url("../img/checkbox-on.svg");
 }
 
-.infrastructure-checkbox:disabled + label::before,
-.house-type-checkbox:disabled + label::before {
+.infrastructure-checkbox:disabled+label::before,
+.house-type-checkbox:disabled+label::before {
   opacity: 0.4;
 }
 
@@ -669,7 +673,7 @@ img {
   position: relative;
   width: 308px;
   height: 2px;
-  background-color: rgba(248,247,244,.5)
+  background-color: rgba(248, 247, 244, .5)
 }
 
 .price-slider {
@@ -693,7 +697,8 @@ img {
   left: 254px;
 }
 
-.price-slider:hover,.price-slider:focus {
+.price-slider:hover,
+.price-slider:focus {
   transform: scale(1.1)
 }
 
@@ -717,6 +722,111 @@ img {
 
   border: 2px solid #ffffff;
   border-radius: 2px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+/* Блок сортировки списка гостиниц */
+.finded-hotels {
+  padding-bottom: 120px;
+
+  background-color: #ffffff;
+}
+
+.hotel-list-controls {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 33px 73px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-list-controls b {
+  margin-right: 50px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.sort {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sort h3 {
+  margin: 0;
+  margin-right: 40px;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+
+.sort-type,
+.sort-direction {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.sort-type label {
+  margin-right: 34px;
+
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #81b3d2;
+}
+
+.sort-type label:hover,
+.sort-type label:focus {
+  color: #81b3d2;
+}
+
+.sort-type label:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sort-radio:checked+label {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.sort-direction {
+  margin-left: auto;
+}
+
+.sort-direction-label {
+  margin-left: 11px;
+}
+
+.sort-direction-label:hover path,
+.sort-direction-label:focus path {
+  fill: #000000;
+}
+
+.sort-direction-label:active path {
+  fill: #81b3d2;
+}
+
+.sort-direction-radio:checked+label path {
+  fill: #81b3d2;
 }
 
 /* Подвал сайта */
