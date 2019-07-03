@@ -733,7 +733,7 @@ a:active {
 
 /* Блок сортировки списка гостиниц */
 .finded-hotels {
-  padding-bottom: 120px;
+  padding-bottom: 122px;
 
   background-color: #ffffff;
 }
@@ -827,6 +827,113 @@ a:active {
 
 .sort-direction-radio:checked+label path {
   fill: #81b3d2;
+}
+
+/* Список гостиниц */
+.hotel-list {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+  list-style: none;
+}
+
+.hotel-list-item {
+  display: flex;
+  padding: 30px 73px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-list-item img {
+  margin-right: 30px;
+}
+
+.hotel-info h3 {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hotel-type {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.hotel-type td {
+  padding: 0;
+}
+
+.button {
+  margin-right: 6px;
+  padding: 5px 17px;
+  padding-bottom: 6px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.detail-button {
+  background-color: #81b3d2;
+}
+
+.detail-button:hover,
+.detail-button:focus {
+  color: #ffffff;
+
+  background-color: #669ec0;
+}
+
+.detail-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.booking-button {
+  background-color: #766357;
+}
+
+.booking-button:hover,
+.booking-button:focus {
+  color: #ffffff;
+
+  background-color: #604e43;
+}
+
+.booking-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.hotel-rating {
+  margin-left: auto;
+
+  text-align: right;
+}
+
+.hotel-rating img{
+  margin: 0;
+  margin-bottom: 47px;
+  margin-left: 5px;
+}
+
+.rating {
+  padding: 5px 15px;
+
+  background-color: #f2f2f2;
 }
 
 /* Подвал сайта */
