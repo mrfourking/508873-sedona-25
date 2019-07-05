@@ -43,10 +43,13 @@ a:active {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -161,9 +164,9 @@ a:active {
   flex-wrap: wrap;
   align-items: center;
   width: 400px;
-  padding-top: 40px;
+  padding-top: 48px;
   padding-right: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 58px;
   padding-left: 60px;
 
   background-color: #eeeeee;
@@ -191,9 +194,9 @@ a:active {
   flex-direction: column;
   align-items: center;
   width: 400px;
-  padding-top: 43px;
+  padding-top: 47px;
   padding-right: 60px;
-  padding-bottom: 55px;
+  padding-bottom: 59px;
   padding-left: 60px;
 
   color: #ffffff;
@@ -209,7 +212,7 @@ a:active {
 .advantages-item h3,
 .advantages-sub-item h4 {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   padding: 0;
   padding-left: 64px;
   padding-right: 65px;
@@ -221,7 +224,7 @@ a:active {
 .count-list-item-wrap {
 
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 
   line-height: 21px;
 }
@@ -294,13 +297,13 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 55px;
+  padding-top: 51px;
 
   background-color: #ffffff;
 }
 
 .hotel-search b {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   font-size: 30px;
   line-height: 36px;
@@ -309,7 +312,7 @@ a:active {
 
 .hotel-search p {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 47px;
   padding: 0;
   padding: 0 380px;
 
@@ -342,7 +345,7 @@ a:active {
 /* Форма поиска */
 .search-form {
   position: absolute;
-  top: 302px;
+  top: 292px;
   left: 50%;
 
   display: flex;
@@ -359,6 +362,10 @@ a:active {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.form-disable {
+  display: none;
 }
 
 .search-form-wrap {
@@ -422,7 +429,7 @@ a:active {
 
 .date-button {
   position: absolute;
-  top: 0;
+  top: 1px;
   right: 0;
 
   width: 38px;
@@ -539,7 +546,7 @@ a:active {
 
 /*Блок фильтра */
 .filter {
-  padding-top: 85px;
+  padding-top: 83px;
   padding-right: 73px;
   padding-left: 73px;
 
@@ -578,14 +585,18 @@ a:active {
 }
 
 .infrastructure {
-  margin-right: 115px;
+  margin-right: 117px;
 }
 
 .infrastructure label,
 .house-type label {
   position: relative;
-  margin-bottom: 23px;
-  padding-left: 40px;
+  margin-bottom: 25px;
+  padding-left: 39px;
+}
+
+.house-type label {
+  padding-left: 42px;
 }
 
 .infrastructure label:last-child,
@@ -598,7 +609,7 @@ a:active {
   content: "";
 
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
 
   width: 23px;
@@ -607,6 +618,11 @@ a:active {
   background-image: url("../img/checkbox-off.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.infrastructure-checkbox:focus+label::before,
+.house-type-checkbox:focus+label::before {
+  outline: #3b99fc auto 5px;
 }
 
 .infrastructure-checkbox:checked+label::before,
@@ -626,7 +642,8 @@ a:active {
 }
 
 .cost legend {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  margin-left: 3px;
 }
 
 .cost-field {
@@ -680,8 +697,8 @@ a:active {
   content: "";
 
   position: absolute;
-  top: -8px;
-  left: -10px;
+  top: -10px;
+  left: -8px;
 
   width: 20px;
   height: 23px;
@@ -694,7 +711,7 @@ a:active {
 }
 
 .price-slider:last-child {
-  left: 254px;
+  left: 244px;
 }
 
 .price-slider:hover,
@@ -733,7 +750,7 @@ a:active {
 
 /* Блок сортировки списка гостиниц */
 .finded-hotels {
-  padding-bottom: 122px;
+  padding-bottom: 128px;
 
   background-color: #ffffff;
 }
@@ -741,13 +758,13 @@ a:active {
 .hotel-list-controls {
   display: flex;
   flex-wrap: wrap;
-  padding: 33px 73px;
+  padding: 29px 73px;
 
   border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-list-controls b {
-  margin-right: 50px;
+  margin-right: 47px;
 
   font-size: 21px;
   line-height: 26px;
@@ -785,7 +802,7 @@ a:active {
 }
 
 .sort-type label {
-  margin-right: 34px;
+  margin-right: 29px;
 
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
@@ -808,12 +825,16 @@ a:active {
   text-decoration: none;
 }
 
+.sort-radio:focus+label {
+  outline: #3b99fc auto 5px;
+}
+
 .sort-direction {
   margin-left: auto;
 }
 
 .sort-direction-label {
-  margin-left: 11px;
+  margin-left: 8px;
 }
 
 .sort-direction-label:hover path,
@@ -827,6 +848,10 @@ a:active {
 
 .sort-direction-radio:checked+label path {
   fill: #81b3d2;
+}
+
+.sort-direction-radio:focus+label {
+  outline: #3b99fc auto 5px;
 }
 
 /* Список гостиниц */
@@ -848,13 +873,22 @@ a:active {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.hotel-list-item:first-child .stars-rating {
+  width: 80px;
+}
+
+.hotel-list-item:last-child .stars-rating {
+  width: 40px;
+}
+
 .hotel-list-item img {
   margin-right: 30px;
 }
 
 .hotel-info h3 {
   margin: 0;
-  margin-bottom: 12px;
+  margin-top: -5px;
+  margin-bottom: 5px;
 
   font-size: 21px;
   line-height: 26px;
@@ -866,6 +900,7 @@ a:active {
   width: 100%;
   margin: 0;
   margin-bottom: 16px;
+  margin-left: -2px;
   padding: 0;
 }
 
@@ -873,10 +908,14 @@ a:active {
   padding: 0;
 }
 
+.hotel-type td:first-child {
+  width: 113px;
+}
+
 .button {
-  margin-right: 6px;
-  padding: 5px 17px;
-  padding-bottom: 6px;
+  margin-right: 2px;
+  padding: 4px 17px;
+  padding-bottom: 5px;
 
   font-size: 14px;
   line-height: 21px;
@@ -920,18 +959,25 @@ a:active {
 
 .hotel-rating {
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 
   text-align: right;
 }
 
-.hotel-rating img{
-  margin: 0;
-  margin-bottom: 47px;
-  margin-left: 5px;
+.stars-rating {
+  width: 60px;
+  height: 17px;
+
+  background-image: url("../img/star.svg");
+  background-position: 0 0;
+  background-repeat: space;
 }
 
 .rating {
-  padding: 5px 15px;
+  padding: 3px 14px;
 
   background-color: #f2f2f2;
 }
@@ -946,7 +992,10 @@ a:active {
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  padding: 36px 72px;
+  padding-top: 37px;
+  padding-right: 80px;
+  padding-bottom: 41px;
+  padding-left: 80px;
 
   background-color: rgba(254, 254, 254, 0.9);
 }
@@ -975,7 +1024,7 @@ a:active {
 }
 
 .social-item {
-  margin-right: 6px;
+  margin: 0 3px;
 }
 
 .social-item a {
@@ -1007,12 +1056,16 @@ a:active {
 .copyright {
   width: 241px;
   margin: 0;
+  padding-left: 4px;
 
   line-height: 26px;
   color: #000000;
+  text-align: center;
 }
 
 .copyright a {
+  margin-left: 4px;
+
   display: inline-block;
 
   vertical-align: middle;
