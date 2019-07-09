@@ -192,6 +192,11 @@ a:active {
   flex-direction: row-reverse;
 }
 
+.advantages-item:nth-child(5) {
+  padding-right: 71px;
+  padding-left: 71px;
+}
+
 .advantages-item:first-child,
 .advantages-item:last-child {
   width: 100%;
@@ -214,6 +219,11 @@ a:active {
   background-color: #81b3d2;
 }
 
+.advantages-item-wrap h3 {
+  padding-left:75px;
+  padding-right: 76px;
+}
+
 .advantages-item h3,
 .advantages-item p {
   text-align: center;
@@ -224,8 +234,8 @@ a:active {
   margin: 0;
   margin-bottom: 24px;
   padding: 0;
-  padding-left: 75px;
-  padding-right: 76px;
+  padding-left: 71px;
+  padding-right: 70px;
 
   font-size: 21px;
   line-height: 21px;
@@ -332,7 +342,7 @@ a:active {
 }
 
 .search-button {
-  padding: 30px 137px;
+  padding: 30px 139px;
 
   font-size: 21px;
   line-height: 26px;
@@ -703,8 +713,8 @@ a:active {
 .cost-field::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 159px;
+  top: 5px;
+  left: 158px;
 
   width: 2px;
   height: 22px;
@@ -713,11 +723,11 @@ a:active {
 }
 
 .cost-field span {
-  margin-left: 92px;
+  margin-left: 87px;
 }
 
 .cost-field span:first-child {
-  margin-left: 65px;
+  margin-left: 62px;
 }
 
 .cost-field input {
@@ -780,8 +790,8 @@ a:active {
 }
 
 .filter-button {
-  margin: 0 auto;
-  padding: 7px 35px;
+  margin-left: 86px;
+  padding: 5px 34px;
 
   font-size: 14px;
   line-height: 21px;
@@ -856,7 +866,7 @@ a:active {
 }
 
 .sort-type-button {
-  margin-right: 29px;
+  margin-right: 33px;
 
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
@@ -883,7 +893,7 @@ a:active {
 }
 
 .sort-direction-button {
-  margin-left: 8px;
+  margin-left: 12px;
 
   color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
@@ -921,7 +931,7 @@ a:active {
 }
 
 .hotel-list-item:first-child .stars-rating {
-  width: 80px;
+  width: 87px;
 }
 
 .hotel-list-item:last-child .stars-rating {
@@ -1016,7 +1026,7 @@ a:active {
 }
 
 .stars-rating {
-  width: 60px;
+  width: 64px;
   height: 17px;
 
   background-image: url("../img/star.svg");
@@ -1025,7 +1035,7 @@ a:active {
 }
 
 .rating {
-  padding: 3px 14px;
+  padding: 3px 12px;
 
   background-color: #f2f2f2;
 }
@@ -1042,7 +1052,7 @@ a:active {
   width: 1200px;
   padding-top: 37px;
   padding-right: 80px;
-  padding-bottom: 41px;
+  padding-bottom: 42px;
   padding-left: 80px;
 
   background-color: rgba(254, 254, 254, 0.9);
