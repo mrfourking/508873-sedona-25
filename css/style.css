@@ -154,8 +154,6 @@ a:active {
   padding: 0;
 
   list-style: none;
-
-  counter-reset: list-item;
 }
 
 .advantages-item {
@@ -258,15 +256,6 @@ a:active {
 
 .count-list-item-wrap::after {
   right: -15px;
-}
-
-.count-list-item {
-  content: "";
-}
-
-.count-list-item::before {
-  counter-increment: list-item;
-  content: "№"counter(list-item);
 }
 
 .advantages-item p {
