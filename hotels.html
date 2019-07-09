@@ -50,20 +50,14 @@
           </fieldset>
           <fieldset class="cost">
             <legend>Стоимость в сутки (р):</legend>
-            <table class="cost-field">
-              <tr>
-                <td>
+            <div class="cost-field">
                   <span>От</span>
                   <label class="visually-hidden" for="min-cost">Минимальная цена</label>
                   <input class="minimal-cost" id="min-cost" type="text" value="0">
-                </td>
-                <td>
                   <span>До</span>
                   <label class="visually-hidden" for="max-cost">Максимальная цена</label>
                   <input class="maximal-cost" id="max-cost" type="text" value="3000">
-                </td>
-              </tr>
-            </table>
+            </div>
             <div class="price-range">
               <div class="scale">
                 <div class="checked-range"></div>
@@ -80,41 +74,40 @@
         <h2 class="visually-hidden">Найденные гостиницы</h2>
         <div class="hotel-list-controls">
           <b>Найдено: 3</b>
-          <form class="sort">
-            <h3>Сортировка: </h3>
-            <fieldset class="sort-type">
-              <input class="sort-radio visually-hidden" id="sort-radio-1" type="radio" name="sort-radio" checked>
-              <label for="sort-radio-1">по цене</label>
-              <input class="sort-radio visually-hidden" id="sort-radio-2" type="radio" name="sort-radio">
-              <label for="sort-radio-2">по типу</label>
-              <input class="sort-radio visually-hidden" id="sort-radio-3" type="radio" name="sort-radio">
-              <label for="sort-radio-3">по рейтингу</label>
-            </fieldset>
-            <fieldset class="sort-direction">
-              <input class="sort-direction-radio visually-hidden" id="sort-direction-radio-1" type="radio"
-                name="sort-direction-radio">
-              <label class="sort-direction-label" for="sort-direction-radio-1">
+          <h3>Сортировка: </h3>
+          <ul class="sort">
+            <li class="sort-item">
+              <a class="sort-type-button sort-type-button-current" href="#">по цене</a>
+            </li>
+            <li class="sort-item">
+              <a class="sort-type-button" href="#">по типу</a>
+            </li>
+            <li class="sort-item">
+              <a class="sort-type-button" href="#">по рейтингу</a>
+            </li>
+            <li class="sort-item">
+              <a class="sort-direction-button" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path fill="#cacaca" d="M5.5 0L0 10h11z" />
                 </svg>
                 <span class="visually-hidden">по возрастанию</span>
-              </label>
-              <input class="sort-direction-radio visually-hidden" id="sort-direction-radio-2" type="radio"
-                name="sort-direction-radio" checked>
-              <label class="sort-direction-label" for="sort-direction-radio-2">
+              </a>
+            </li>
+            <li class="sort-item">
+              <a class="sort-direction-button sort-direction-button-current" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path fill="#cacaca" d="M5.5 10L0 0h11" />
                 </svg>
                 <span class="visually-hidden">по убыванию</span>
-              </label>
-            </fieldset>
-          </form>
+              </a>
+            </li>
+          </ul>
         </div>
         <ul class="hotel-list">
           <li class="hotel-list-item">
             <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
             <div class="hotel-info">
-              <h3>Amara Resort & Spa</h3>
+              <h3><a href="#">Amara Resort & Spa</a></h3>
               <table class="hotel-type">
                 <tr>
                   <td>Гостиница</td>
@@ -132,7 +125,7 @@
           <li class="hotel-list-item">
             <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
             <div class="hotel-info">
-              <h3>Desert Quail Inn</h3>
+              <h3><a href="#">Desert Quail Inn</a></h3>
               <table class="hotel-type">
                 <tr>
                   <td>Мотель</td>
@@ -151,7 +144,7 @@
           <li class="hotel-list-item">
             <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             <div class="hotel-info">
-              <h3>Villas at Poco Diablo</h3>
+              <h3><a href="#">Villas at Poco Diablo</a></h3>
               <table class="hotel-type">
                 <tr>
                   <td>Апартаменты</td>
