@@ -159,11 +159,14 @@ a:active {
 }
 
 .advantages-item {
+  z-index: 100;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   width: 400px;
+  margin: 0;
   padding-top: 48px;
   padding-right: 60px;
   padding-bottom: 58px;
@@ -177,6 +180,8 @@ a:active {
   flex-direction: row;
   width: 100%;
   padding: 0;
+
+  background-color: #81b3d2;
 }
 
 .advantages-item:nth-child(2) {
@@ -185,6 +190,7 @@ a:active {
 
 .advantages-item:first-child,
 .advantages-item:last-child {
+  width: 100%;
   order: -1;
   padding: 0;
 }
@@ -254,12 +260,17 @@ a:active {
   right: -15px;
 }
 
+.count-list-item {
+  content: "";
+}
+
 .count-list-item::before {
   counter-increment: list-item;
   content: "№"counter(list-item);
 }
 
 .advantages-item p {
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -293,6 +304,7 @@ a:active {
 
 /* Блок поиска гостиницы */
 .hotel-search {
+  z-index: 100;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -308,15 +320,20 @@ a:active {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+
+  background-color: #ffffff;
 }
 
 .hotel-search p {
+  width: 100%;
   margin: 0;
   margin-bottom: 47px;
   padding: 0;
   padding: 0 380px;
 
   text-align: center;
+
+  background-color: #ffffff;
 }
 
 .search-button {
@@ -343,9 +360,14 @@ a:active {
 }
 
 /* Форма поиска */
+.form-wrap {
+  position: relative;
+}
+
 .search-form {
+  z-index: 1;
   position: absolute;
-  top: 292px;
+  bottom: -396px;
   left: 50%;
 
   display: flex;
@@ -368,6 +390,11 @@ a:active {
   display: none;
 }
 
+.form-show {
+  display: flex;
+  animation: bounce 0.6s;
+}
+
 .search-form-wrap {
   position: relative;
   width: 458px;
@@ -386,8 +413,10 @@ a:active {
 
 .date-field,
 .number-field {
+  min-height: 38px;
   margin: 0;
   margin-bottom: 30px;
+  margin-left: auto;
   padding: 6px 13px;
 
   font: inherit;
@@ -400,6 +429,10 @@ a:active {
 
 .date-field {
   width: 346px;
+}
+
+.date-field::-ms-clear {
+  display: none;
 }
 
 .number-field {
@@ -542,6 +575,18 @@ a:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
+}
+
+/* Блок карты */
+
+.map {
+  position: relative;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*Блок фильтра */
@@ -1078,4 +1123,24 @@ a:active {
 
 .copyright-logo:active path {
   fill: #bdbbbc;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-396px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-reverse {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-396px);
+  }
 }
